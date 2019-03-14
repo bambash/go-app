@@ -32,4 +32,4 @@ jobs:
             docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD
             docker push $IMAGE_NAME:${CIRCLE_SHA1}
             docker push $IMAGE_NAME:${CIRCLE_BRANCH}
-            docker pu
+            docker push $IMAGE_NAME:latest
